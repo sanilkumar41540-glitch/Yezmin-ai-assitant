@@ -1,18 +1,24 @@
+
 [app]
-title = Yazmin AI
-package.name = yazmin
-package.domain = org.yazmin
+title = My Application
+package.name = myapp
+package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy
+requirements = python3,kivy,pyjnius==1.6.1
 orientation = portrait
 fullscreen = 0
-android.permissions = INTERNET,RECORD_AUDIO
 android.api = 33
-android.minapi = 21
-android.ndk = 25b
+android.minapi = 24
 android.sdk = 33
-[buildozer]android.accept_sdk_license = True
+android.ndk = 25b
+android.gradle_dependencies =
 android.accept_sdk_license = True
+android.archs = arm64-v8a,armeabi-v7a
+p4a.branch = develop
+android.p4a_branch = develop
+
+[buildozer]
 log_level = 2
+warn_on_root = 1
